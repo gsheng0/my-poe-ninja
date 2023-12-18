@@ -1,0 +1,1 @@
+const baseUrl = "https://poe.ninja/api/data/currencyoverview?league=Blight&type=Currency"
