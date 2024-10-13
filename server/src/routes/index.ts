@@ -1,7 +1,8 @@
-import recipeRouter from "./recipes.js";
+export const constructorMethod = (app) => {
+    app.get('/get', async(req, res) => {
+        res.json({message: "Hello World"})
+    })
 
-
-const constructorMethod = (app) => {
     app.post('/signup', async (req, res) => {
         const params = req.body;
         let name = params.name;
@@ -25,5 +26,3 @@ const constructorMethod = (app) => {
       res.status(404).json({error: 'Not found'});
     });
   };
-  
-  export default constructorMethod;
