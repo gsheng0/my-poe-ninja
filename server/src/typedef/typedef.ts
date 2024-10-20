@@ -14,8 +14,17 @@ export interface CurrencyDataEntry {
     confidence?: string
 }
 
-export interface CurrencyData {
+export interface TradeData {
     league: string,
     division: string,
-    data: CurrencyDataEntry[]
+    currencyData: CurrencyData
+}
+
+export interface CurrencyData {
+    [key: string]: CurrencyDataEntry[]
+}
+
+export interface ItemDataEntry {
+    date: string,
+
 }
